@@ -31,9 +31,9 @@ function App() {
     });
 
     //cancel auto caroussel
-    $(".carousel").carousel({
-      interval: false,
-    });
+    // $(".carousel").carousel({
+    //   interval: false,
+    // });
   });
 
   return (
@@ -162,18 +162,10 @@ function App() {
                 alt="A picture of me"
               ></img>
               <h2 className="font-weight-bold text-center pt-3">
-                Who's Ramon?
+                Who's Jared?
               </h2>
               <p className="text-center description">
-                I was born and raised in Germany until I moved to California,
-                Orange County in July of 2014. Fighting adversity and beating
-                the odds, my family and I are still pursuing the American Dream.
-                I am currently a Senior at the California State University
-                Fullerton as a Computer Science Major. I'll be graduating after
-                this Spring semester and I am looking for a Software Engineering
-                role. I've built professional iOS applications, Websites, and
-                Web Applications for customers in a Scrum based team
-                environment.
+                *** Think of something do write for this section ***
               </p>
             </div>
             <div className="col-xl d-flex flex-column bd-highlight justify-content-center w-100 deviceAdjustment">
@@ -185,7 +177,7 @@ function App() {
                   aria-valuemin="0"
                   aria-valuemax="100"
                 >
-                  Swift
+                  Python
                 </div>
                 <div
                   className="progress-bar font-weight-bold text-right pr-5 w-75 progressFont"
@@ -208,7 +200,7 @@ function App() {
                   aria-valuemin="0"
                   aria-valuemax="100"
                 >
-                  C++
+                  Javascript
                 </div>
                 <div
                   className="progress-bar font-weight-bold text-right pr-5 w-75 progressFont"
@@ -313,52 +305,6 @@ function App() {
                   data-aos-delay="800"
                 >
                   70%
-                </div>
-              </div>
-              <div className="progress mt-4 progressHeight">
-                <div
-                  className="progress-bar bg-info font-weight-bold w-15"
-                  role="progressbar"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  Javascript
-                </div>
-                <div
-                  className="progress-bar font-weight-bold text-right pr-5 w-50 progressFont"
-                  role="progressbar"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  data-aos="zoom-in"
-                  data-aos-duration="1800"
-                  data-aos-delay="800"
-                >
-                  65%
-                </div>
-              </div>
-              <div className="progress mt-4 progressHeight">
-                <div
-                  className="progress-bar bg-info font-weight-bold w-15"
-                  role="progressbar"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  Python
-                </div>
-                <div
-                  className="progress-bar font-weight-bold text-right pr-5 w-35 progressFont"
-                  role="progressbar"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  data-aos="zoom-in"
-                  data-aos-duration="1800"
-                  data-aos-delay="800"
-                >
-                  50%
                 </div>
               </div>
             </div>
