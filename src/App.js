@@ -1,5 +1,5 @@
 import "./App.css";
-import me from "./assets/me.jpg";
+import me from "./assets/me.jpeg";
 import Contact from "./components/Contact";
 import $ from "jquery";
 import Project from "./components/Project";
@@ -143,7 +143,7 @@ function App() {
           <div
             className="header-bar"
             data-aos="fade-left"
-            data-aos-duration="3000"
+            data-aos-duration="1000"
             data-aos-delay="500"
           ></div>
         </div>
@@ -151,8 +151,8 @@ function App() {
           <div
             className="row"
             data-aos="zoom-out"
-            data-aos-duration="1000"
-            data-aos-delay="1500"
+            data-aos-duration="900"
+            data-aos-delay="700"
           >
             <div className="col-xl p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center">
               <img
@@ -160,12 +160,18 @@ function App() {
                 width="300px"
                 className="rounded"
                 alt="A picture of me"
-              ></img>
+              />
               <h2 className="font-weight-bold text-center pt-3">
                 Who's Jared?
               </h2>
               <p className="text-center description">
-                *** Think of something do write for this section ***
+                Utilizing my degree in computer science and my passion for art
+                fuels my innovative approach to problem-solving and design. Over
+                the years, I have honed my skills through various projects,
+                ranging from web developement to data analysis. These
+                experiences have equipped me with a robust foundation in
+                software engineering, enabling me to build efficient,
+                user-friendly solutions.
               </p>
             </div>
             <div className="col-xl d-flex flex-column bd-highlight justify-content-center w-100 deviceAdjustment">
@@ -186,7 +192,7 @@ function App() {
                   aria-valuemin="0"
                   aria-valuemax="100"
                   data-aos="zoom-in"
-                  data-aos-duration="1000"
+                  data-aos-duration="800"
                   data-aos-delay="500"
                 >
                   90%
@@ -209,7 +215,7 @@ function App() {
                   aria-valuemin="0"
                   aria-valuemax="100"
                   data-aos="zoom-in"
-                  data-aos-duration="1200"
+                  data-aos-duration="900"
                   data-aos-delay="600"
                 >
                   90%
@@ -232,7 +238,7 @@ function App() {
                   aria-valuemin="0"
                   aria-valuemax="100"
                   data-aos="zoom-in"
-                  data-aos-duration="1400"
+                  data-aos-duration="1000"
                   data-aos-delay="700"
                 >
                   80%
@@ -255,7 +261,7 @@ function App() {
                   aria-valuemin="0"
                   aria-valuemax="100"
                   data-aos="zoom-in"
-                  data-aos-duration="1800"
+                  data-aos-duration="1100"
                   data-aos-delay="800"
                 >
                   80%
@@ -278,7 +284,7 @@ function App() {
                   aria-valuemin="0"
                   aria-valuemax="100"
                   data-aos="zoom-in"
-                  data-aos-duration="1800"
+                  data-aos-duration="1300"
                   data-aos-delay="800"
                 >
                   75%
@@ -301,7 +307,7 @@ function App() {
                   aria-valuemin="0"
                   aria-valuemax="100"
                   data-aos="zoom-in"
-                  data-aos-duration="1800"
+                  data-aos-duration="1300"
                   data-aos-delay="800"
                 >
                   70%
@@ -315,7 +321,7 @@ function App() {
               className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle"
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1500"
+              data-aos-delay="1000"
             >
               <i className="fas fa-code fa-6x text-primary"></i>
               <h1 className="pt-2 aboutColor">Concise</h1>
@@ -327,7 +333,7 @@ function App() {
               className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle"
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1500"
+              data-aos-delay="1000"
             >
               <i className="fas fa-cubes fa-6x text-success"></i>
               <h1 className="pt-2 aboutColor text-center">Problem Solving</h1>
@@ -341,7 +347,7 @@ function App() {
               className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle"
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1500"
+              data-aos-delay="1000"
             >
               <i className="fas fa-shield-alt fa-6x text-warning"></i>
               <h1 className="pt-2 aboutColor">Security</h1>
@@ -353,7 +359,7 @@ function App() {
               className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle"
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1500"
+              data-aos-delay="1000"
             >
               <i className="fab fa-medapps fa-6x text-info"></i>
               <h1 className="pt-2 aboutColor">Algorithms</h1>
@@ -406,44 +412,57 @@ function App() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <Project
-                title="Dari Learner - iOS"
-                pageLink="https://darilearner.com/"
+                title="Computer Starter"
+                pageLink="https://github.com/jjb4547/ComputerStarter"
                 videoLink="https://www.youtube.com/embed/C4jrGsz_XH4"
-                infoTitle="Want to Learn some Dari?"
-                infoText="Learn Dari in an exciting educational way. Think of it as the Quizlet of Dari. Dari Learner is a fun, free way of becoming fluent in Dari. Dari Learner makes learning Dari easy, effective, and above all, fun. With tools such as Flashcards and Quizzes, it allows you to build a strong speaking and listening foundation. By tracking your progress, Dari Learner helps you realize how much you have learned while receiving achievements that make practicing a daily habit."
+                infoTitle="Want to learn about PCs?"
+                infoText="Computer Starter is an android application geared towards
+                computer enthusiasts, old and new to join a community, learn
+                about computers and build one on their own."
                 infoSecondTitle="Technology"
-                infoSecondText="Dari Learner is a SwiftUI based application that truly utilizes its declarative concept allowing its UI to shine. It utilizes Firebase for Authentication, Storage as well as AdMob. Finally, Dari Learner has it's own API that is uses to retrieve its Vocabulary. The API is built using Flask and is hosted by Heroku."
+                infoSecondText="Computer Starter is an Android based application written in Java that 
+                truly utilizes its declarative concept allowing its UI to shine. It utilizes 
+                Firebase for Authentication and storage. Finally, Computer Starter uses web scraping 
+                tools to extract the best products and prices for the pc build section."
               />
             </div>
             <div className="carousel-item">
               <Project
-                title="MusoLive Mux Integration - React"
-                pageLink="https://github.com/Farnam0/stream-mux-api"
+                title="Fabled Fieldguide"
+                pageLink="https://github.com/JayNode/FFG"
                 videoLink="https://www.youtube.com/embed/hv7DdIy-ZbA"
                 infoTitle="About"
-                infoText="MusoLive is an interactive platform for fans to interact with musicians. For my Capstone Project, we created a React based Web Application for this Company that Utilizes Mux for its Streaming and Video Playback functionality. The app allows the user to trim and save video clips at will. For this, we use the Mux API to store and process videos."
+                infoText="Fabled Fieldguide is an environmental conservation focused website using 
+                mythical creatures as figure heads for thier respected environments. It makes learning 
+                about and helping the enviroment fun and fulfilling."
                 infoSecondTitle="Technology"
-                infoSecondText="Our Web Application uses ReactJS as its Front End framework which allowed us to soley focus on Figuring out the Mux API and integrating it into our Application. We are using NodeJS, allowing us to use the Official Mux API wrapper, making it a breeze for us to implement."
+                infoSecondText="Fable Fieldguide is a React web application written in JavaScript 
+                using MongDB for authentication and storage. "
               />
             </div>
             <div className="carousel-item">
               <Project
-                title="MealPickr - Kotlin"
-                pageLink="https://github.com/CSUF-CPSC411-2021F/group-project-team-hypervisor"
+                title="Reco Bot"
+                pageLink="https://github.com/JayNode/VGRB"
                 videoLink="https://youtube.com/embed/dqSXcmuTBd0"
-                infoTitle="What is MealPickr?"
-                infoText="MealPickr is a mobile android application that helps those who cannot find a place to eat. It will take the user’s current location and pick a random restaurant within a given range of the users choice."
+                infoTitle="What is Reco Bot?"
+                infoText="Reco Bot is a video game recommendation bot through Discord. It will look at your 
+                current played games in your Steam library and recommend a game it believes you would enjoy."
                 infoSecondTitle="Technology"
-                infoSecondText="MealPickr is a Kotlin based application which utilizes the Maps SDK. It receives it's data straight from the Yelp API."
+                infoSecondText="Reco Bot is a python based Discord bot which utilizes Discord API, Steam API and OpenAI API."
               />
             </div>
             <div className="carousel-item">
               <Project
-                title="The Mudkips - QT"
-                pageLink="https://github.com/raaamonnn/TheMudkips"
+                title="Mark Automation Script"
+                pageLink="https://github.com/JayNode/Mark-Automation-Script"
                 videoLink="https://youtube.com/embed/dedLbTl9RD0"
                 infoTitle="About"
-                infoText="The Mudkips is my final group project for my Datastructures class. As the Scrum Master, it was my resposibility to facilitate scrum to the team by ensuring the scrum framework is followed. The Application's main objective was it to utilize datastructures such as a ordered map as well as efficient algorithms like  the A* algorithm to find  the shortest vacation trip and Kruskal's algorithm to find the minimum spanning tree."
+                infoText="Mark Automation Script is an automation script that takes data from a Baselight machine 
+                and moves it to the correct file location."
+                infoSecondTitle="Technology"
+                infoSecondText="Mark Automation Script is a python script which parses through the Baselight machine, 
+                stores the data in MongoDB and redistributes the data to the correct file location."
               />
             </div>
           </div>
@@ -488,15 +507,12 @@ function App() {
                 doing any of the following:
               </p>
               <ul>
-                <li>Hanging out with Friends and Meeting new People</li>
+                <li>Drawing</li>
                 <li>Video Games</li>
-                <li>Waterpolo</li>
-                <li>Soccer</li>
-                <li>Surfing</li>
+                <li>Running</li>
+                <li>Tennis</li>
+                <li>Reading</li>
               </ul>
-              <p className="text-center mb-5">
-                If you couldn't already tell, I Love Sports!
-              </p>
             </div>
           </div>
         </div>
