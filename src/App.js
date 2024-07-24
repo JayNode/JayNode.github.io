@@ -86,7 +86,6 @@ function App() {
           id="navbar_top"
           className="gradientColor navbar navbar-expand-sm navbar-dark"
         >
-          <h1 className="navbar-brand"></h1>
           <button
             className="navbar-toggler"
             type="button"
@@ -155,12 +154,7 @@ function App() {
             data-aos-delay="700"
           >
             <div className="col-xl p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center">
-              <img
-                src={me}
-                width="300px"
-                className="rounded"
-                alt="A picture of me"
-              />
+              <img src={me} width="300px" className="rounded" alt="" />
               <h2 className="font-weight-bold text-center pt-3">
                 Who's Jared?
               </h2>
@@ -275,7 +269,7 @@ function App() {
                   aria-valuemin="0"
                   aria-valuemax="100"
                 >
-                  Java
+                  React
                 </div>
                 <div
                   className="progress-bar font-weight-bold text-right pr-5 w-60 progressFont"
@@ -298,7 +292,7 @@ function App() {
                   aria-valuemin="0"
                   aria-valuemax="100"
                 >
-                  React
+                  Java
                 </div>
                 <div
                   className="progress-bar font-weight-bold text-right pr-5 w-55 progressFont"
@@ -321,7 +315,7 @@ function App() {
               className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle"
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1000"
+              data-aos-delay="500"
             >
               <i className="fas fa-code fa-6x text-primary"></i>
               <h1 className="pt-2 aboutColor">Concise</h1>
@@ -333,7 +327,7 @@ function App() {
               className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle"
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1000"
+              data-aos-delay="500"
             >
               <i className="fas fa-cubes fa-6x text-success"></i>
               <h1 className="pt-2 aboutColor text-center">Problem Solving</h1>
@@ -347,7 +341,7 @@ function App() {
               className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle"
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1000"
+              data-aos-delay="500"
             >
               <i className="fas fa-shield-alt fa-6x text-warning"></i>
               <h1 className="pt-2 aboutColor">Security</h1>
@@ -359,7 +353,7 @@ function App() {
               className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle"
               data-aos="flip-left"
               data-aos-duration="1000"
-              data-aos-delay="1000"
+              data-aos-delay="500"
             >
               <i className="fab fa-medapps fa-6x text-info"></i>
               <h1 className="pt-2 aboutColor">Algorithms</h1>
@@ -397,7 +391,7 @@ function App() {
           data-interval="false"
           data-aos="zoom-in-up"
           data-aos-duration="1700"
-          data-aos-delay="2000"
+          data-aos-delay="1000"
         >
           <ol className="carousel-indicators mt-5">
             <li
@@ -496,8 +490,8 @@ function App() {
             <div
               className="text-light col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle2"
               data-aos="flip-left"
-              data-aos-duration="1000"
-              data-aos-delay="1500"
+              data-aos-duration="1500"
+              data-aos-delay="500"
             >
               <h1 className="font-weight-bold text-center pt-4">
                 Personal Interests
