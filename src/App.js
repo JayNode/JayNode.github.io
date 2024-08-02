@@ -24,13 +24,13 @@ function App() {
   $(document).ready(function () {
     //dynamic active navitem
     $(".nav-item").on("click", function (e) {
-      // Remove class active form all li.nav-tiem
+      // Remove class active form all li.nav-item
       $("li.nav-item").removeClass("active");
       // Add Class to current Element.
       $(this).addClass("active");
     });
 
-    //cancel auto caroussel
+    // cancel auto caroussel
     // $(".carousel").carousel({
     //   interval: false,
     // });
@@ -48,17 +48,17 @@ function App() {
               data-aos-duration="3000"
             >
               <div className="d-sm-flex col">
-                <h1 className="fw-bold text-white m-0 pr-3 text-center">
+                <h1 className="fw-bold text-black m-0 pr-3 text-center">
                   Hello, I'm
                 </h1>
-                <h1 className=" fw-bold m-0 text-warning text-center">
+                <h1 className=" fw-bold m-0 text-color text-center">
                   Jared Immerman.
                 </h1>
               </div>
             </div>
             <div className="row">
               <h1
-                className="fw-bold text-white m-0 text-center"
+                className="fw-bold text-black m-0 text-center"
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
@@ -66,7 +66,7 @@ function App() {
               </h1>
             </div>
             <div className="row">
-              <a href="#about">
+              <a href="#projects">
                 <div
                   class="button mt-4"
                   data-aos="fade-up"
@@ -105,13 +105,13 @@ function App() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">
-                  ABOUT
+                <a className="nav-link" href="#projects">
+                  PROJECTS
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#projects">
-                  PROJECTS
+                <a className="nav-link" href="#about">
+                  ABOUT
                 </a>
               </li>
               <li className="nav-item">
@@ -128,6 +128,128 @@ function App() {
           </div>
         </nav>
       </header>
+
+      {/* <!-- Projects --> */}
+      <div
+        id="projects"
+        className="container-fluid contentSpacing projectContainer"
+      >
+        <div className="row d-flex flex-column justify-content-center align-items-center">
+          <h1
+            className="font-weight-bold"
+            data-aos="fade-left"
+            data-aos-duration="500"
+          >
+            PROJECTS
+          </h1>
+          <div
+            className="header-bar waypoint animated slide-in-left"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            data-aos-delay="500"
+          ></div>
+        </div>
+        <div
+          id="carouselExampleIndicators"
+          className="carousel slide"
+          data-interval="false"
+          data-aos="zoom-in-up"
+          data-aos-duration="1700"
+          data-aos-delay="1000"
+        >
+          <ol className="carousel-indicators mt-5">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              className="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <Project
+                title="Computer Starter"
+                pageLink="https://github.com/jjb4547/ComputerStarter"
+                videoLink="https://www.youtube.com/embed/C4jrGsz_XH4"
+                infoTitle="Want to learn about PCs?"
+                infoText="Computer Starter is an android application geared towards
+                computer enthusiasts, old and new to join a community, learn
+                about computers and build one on their own."
+                infoSecondTitle="Technology"
+                infoSecondText="Computer Starter is an Android based application written in Java that 
+                truly utilizes its declarative concept allowing its UI to shine. It utilizes 
+                Firebase for Authentication and storage. Finally, Computer Starter uses web scraping 
+                tools to extract the best products and prices for the pc build section."
+              />
+            </div>
+            <div className="carousel-item">
+              <Project
+                title="Fabled Fieldguide"
+                pageLink="https://github.com/JayNode/FFG"
+                videoLink="https://www.youtube.com/embed/hv7DdIy-ZbA"
+                infoTitle="About"
+                infoText="Fabled Fieldguide is an environmental conservation focused website using 
+                mythical creatures as figure heads for thier respected environments. It makes learning 
+                about and helping the enviroment fun and fulfilling."
+                infoSecondTitle="Technology"
+                infoSecondText="Fable Fieldguide is a React web application written in JavaScript 
+                using MongDB for authentication and storage. "
+              />
+            </div>
+            <div className="carousel-item">
+              <Project
+                title="Reco Bot"
+                pageLink="https://github.com/JayNode/VGRB"
+                videoLink="https://youtube.com/embed/dqSXcmuTBd0"
+                infoTitle="What is Reco Bot?"
+                infoText="Reco Bot is a video game recommendation bot through Discord. It will look at your 
+                current played games in your Steam library and recommend a game it believes you would enjoy."
+                infoSecondTitle="Technology"
+                infoSecondText="Reco Bot is a python based Discord bot which utilizes Discord API, Steam API and OpenAI API."
+              />
+            </div>
+            <div className="carousel-item">
+              <Project
+                title="Mark Automation Script"
+                pageLink="https://github.com/JayNode/Mark-Automation-Script"
+                videoLink="https://youtube.com/embed/dedLbTl9RD0"
+                infoTitle="About"
+                infoText="Mark Automation Script is an automation script that takes data from a Baselight machine 
+                and moves it to the correct file location."
+                infoSecondTitle="Technology"
+                infoSecondText="Mark Automation Script is a python script which parses through the Baselight machine, 
+                stores the data in MongoDB and redistributes the data to the correct file location."
+              />
+            </div>
+          </div>
+          <a
+            className="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="sr-only">Previous</span>
+          </a>
+          <a
+            className="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
 
       {/* <!-- About --> */}
       <div id="about" className="container contentSpacing">
@@ -310,6 +432,33 @@ function App() {
             </div>
           </div>
 
+          {/** <!-- Interests --> */}
+          <div id="projects" className="container">
+            <div className="row personalInterests">
+              <div
+                className="text-light col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle2"
+                data-aos="flip-left"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+              >
+                <h1 className="font-weight-bold text-center pt-4">
+                  Personal Interests
+                </h1>
+                <p className="text-center contactTitle">
+                  When I am not coding my next project, I enjoy spending my time
+                  doing any of the following:
+                </p>
+                <ul>
+                  <li>Drawing</li>
+                  <li>Video Games</li>
+                  <li>Running</li>
+                  <li>Tennis</li>
+                  <li>Reading</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <div className="row justify-content-around bd-highlight pt-5 pb-5">
             <div
               className="col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle"
@@ -360,153 +509,6 @@ function App() {
               <p className="text-center aboutColor">
                 Efficient Algorithms using Best Performing Data Structures
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* <!-- Projects --> */}
-      <div
-        id="projects"
-        className="container-fluid contentSpacing projectContainer"
-      >
-        <div className="row d-flex flex-column justify-content-center align-items-center">
-          <h1
-            className="font-weight-bold"
-            data-aos="fade-left"
-            data-aos-duration="500"
-          >
-            PROJECTS
-          </h1>
-          <div
-            className="header-bar waypoint animated slide-in-left"
-            data-aos="fade-left"
-            data-aos-duration="3000"
-            data-aos-delay="500"
-          ></div>
-        </div>
-        <div
-          id="carouselExampleIndicators"
-          className="carousel slide"
-          data-interval="false"
-          data-aos="zoom-in-up"
-          data-aos-duration="1700"
-          data-aos-delay="1000"
-        >
-          <ol className="carousel-indicators mt-5">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              className="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          </ol>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <Project
-                title="Computer Starter"
-                pageLink="https://github.com/jjb4547/ComputerStarter"
-                videoLink="https://www.youtube.com/embed/C4jrGsz_XH4"
-                infoTitle="Want to learn about PCs?"
-                infoText="Computer Starter is an android application geared towards
-                computer enthusiasts, old and new to join a community, learn
-                about computers and build one on their own."
-                infoSecondTitle="Technology"
-                infoSecondText="Computer Starter is an Android based application written in Java that 
-                truly utilizes its declarative concept allowing its UI to shine. It utilizes 
-                Firebase for Authentication and storage. Finally, Computer Starter uses web scraping 
-                tools to extract the best products and prices for the pc build section."
-              />
-            </div>
-            <div className="carousel-item">
-              <Project
-                title="Fabled Fieldguide"
-                pageLink="https://github.com/JayNode/FFG"
-                videoLink="https://www.youtube.com/embed/hv7DdIy-ZbA"
-                infoTitle="About"
-                infoText="Fabled Fieldguide is an environmental conservation focused website using 
-                mythical creatures as figure heads for thier respected environments. It makes learning 
-                about and helping the enviroment fun and fulfilling."
-                infoSecondTitle="Technology"
-                infoSecondText="Fable Fieldguide is a React web application written in JavaScript 
-                using MongDB for authentication and storage. "
-              />
-            </div>
-            <div className="carousel-item">
-              <Project
-                title="Reco Bot"
-                pageLink="https://github.com/JayNode/VGRB"
-                videoLink="https://youtube.com/embed/dqSXcmuTBd0"
-                infoTitle="What is Reco Bot?"
-                infoText="Reco Bot is a video game recommendation bot through Discord. It will look at your 
-                current played games in your Steam library and recommend a game it believes you would enjoy."
-                infoSecondTitle="Technology"
-                infoSecondText="Reco Bot is a python based Discord bot which utilizes Discord API, Steam API and OpenAI API."
-              />
-            </div>
-            <div className="carousel-item">
-              <Project
-                title="Mark Automation Script"
-                pageLink="https://github.com/JayNode/Mark-Automation-Script"
-                videoLink="https://youtube.com/embed/dedLbTl9RD0"
-                infoTitle="About"
-                infoText="Mark Automation Script is an automation script that takes data from a Baselight machine 
-                and moves it to the correct file location."
-                infoSecondTitle="Technology"
-                infoSecondText="Mark Automation Script is a python script which parses through the Baselight machine, 
-                stores the data in MongoDB and redistributes the data to the correct file location."
-              />
-            </div>
-          </div>
-          <a
-            className="carousel-control-prev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="sr-only">Previous</span>
-          </a>
-          <a
-            className="carousel-control-next"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="sr-only">Next</span>
-          </a>
-        </div>
-        <div id="projects" className="container">
-          <div className="row personalInterests">
-            <div
-              className="text-light col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle2"
-              data-aos="flip-left"
-              data-aos-duration="1500"
-              data-aos-delay="500"
-            >
-              <h1 className="font-weight-bold text-center pt-4">
-                Personal Interests
-              </h1>
-              <p className="text-center contactTitle">
-                When I am not coding my next project, I enjoy spending my time
-                doing any of the following:
-              </p>
-              <ul>
-                <li>Drawing</li>
-                <li>Video Games</li>
-                <li>Running</li>
-                <li>Tennis</li>
-                <li>Reading</li>
-              </ul>
             </div>
           </div>
         </div>
