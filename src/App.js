@@ -168,6 +168,32 @@ function App() {
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           </ol>
           <div className="carousel-inner">
+            <div className="carousel-item">
+              <Project
+                title="Reco Bot"
+                pageLink="https://github.com/JayNode/VGRB"
+                videoLink="https://youtube.com/embed/dqSXcmuTBd0"
+                infoTitle="What is Reco Bot?"
+                infoText="Reco Bot is a video game recommendation bot through Discord. It will look at your 
+                current played games in your Steam library and recommend a game it believes you would enjoy."
+                infoSecondTitle="Technology"
+                infoSecondText="Reco Bot is a python based Discord bot which utilizes Discord API, Steam API and OpenAI API."
+              />
+            </div>
+            <div className="carousel-item">
+              <Project
+                title="Reddit Summarizer"
+                pageLink=""
+                videoLink="https://youtube.com/embed/dedLbTl9RD0"
+                infoTitle="About"
+                infoText="Reddit Summarizer is a reddit bot that will search for articles in a given subreddit 
+                and comment a summary to help save a user time"
+                infoSecondTitle="Technology"
+                infoSecondText="Reddit Bot - Summarizer is a python script that scans for articles 
+                in a selected subreddit. Using the article, we web scrape the article information putting it into chatGPT 3.5
+                to extract a summarized version. Then we use reddit's API (PRAW) to comment the summary to the original post."
+              />
+            </div>
             <div className="carousel-item active">
               <Project
                 title="Computer Starter"
@@ -198,19 +224,7 @@ function App() {
                 using MongDB for authentication and storage. "
               />
             </div>
-            <div className="carousel-item">
-              <Project
-                title="Reco Bot"
-                pageLink="https://github.com/JayNode/VGRB"
-                videoLink="https://youtube.com/embed/dqSXcmuTBd0"
-                infoTitle="What is Reco Bot?"
-                infoText="Reco Bot is a video game recommendation bot through Discord. It will look at your 
-                current played games in your Steam library and recommend a game it believes you would enjoy."
-                infoSecondTitle="Technology"
-                infoSecondText="Reco Bot is a python based Discord bot which utilizes Discord API, Steam API and OpenAI API."
-              />
-            </div>
-            <div className="carousel-item">
+            {/* <div className="carousel-item">
               <Project
                 title="Mark Automation Script"
                 pageLink="https://github.com/JayNode/Mark-Automation-Script"
@@ -222,7 +236,7 @@ function App() {
                 infoSecondText="Mark Automation Script is a python script which parses through the Baselight machine, 
                 stores the data in MongoDB and redistributes the data to the correct file location."
               />
-            </div>
+            </div> */}
           </div>
           <a
             className="carousel-control-prev"
