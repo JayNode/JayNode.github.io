@@ -135,6 +135,9 @@ span.carousel-control-prev-icon {
 a {
   text-decoration: none !important;
 }
+.temp {
+  background-color: red;
+}
 
 .aboutColor {
   color: #555555;

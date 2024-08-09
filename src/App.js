@@ -3,7 +3,12 @@ import me from "./assets/me.jpeg";
 import Contact from "./components/Contact";
 import $ from "jquery";
 import Project from "./components/Project";
+import Art from "./components/Art";
 import resume from "./assets/2022Resume.pdf";
+import ladyLight from "./assets/lady-light.jpg";
+import tyler from "./assets/tyler-the-creator.jpg";
+import model from "./assets/model.jpg";
+import sketch from "./assets/lady-bnw.jpg";
 function App() {
   //Dynamic Fixed Navigation Bar
   document.addEventListener("DOMContentLoaded", function () {
@@ -62,7 +67,7 @@ function App() {
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
-                I'm a Software Engineer.
+                I'm a Software Engineer and Artist.
               </h1>
             </div>
             <div className="row">
@@ -262,6 +267,69 @@ function App() {
             ></span>
             <span className="sr-only">Next</span>
           </a>
+        </div>
+      </div>
+
+      {/* <!-- Art --> */}
+      <div className="container pt-5">
+        <div className="row d-flex flex-column justify-content-center align-items-center mt-5">
+          <h1
+            className="font-weight-bold"
+            data-aos="fade-left"
+            data-aos-duration="500"
+          >
+            ART
+          </h1>
+          <div
+            className="header-bar waypoint animated slide-in-left"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            data-aos-delay="500"
+          ></div>
+        </div>
+        <div className="row justify-content-md-center pt-5 pb-0">
+          <div
+            className="col"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <div className="">
+              <Art artImg={ladyLight} />
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-md-center pt-4 pb-5">
+          <div
+            className="col"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <div className="">
+              <Art artImg={tyler} />
+            </div>
+          </div>
+          <div
+            className="col"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <div className="">
+              <Art artImg={model} />
+            </div>
+          </div>
+          <div
+            className="col"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <div className="">
+              <Art artImg={sketch} />
+            </div>
+          </div>
         </div>
       </div>
 
