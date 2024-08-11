@@ -139,6 +139,10 @@ a {
   background-color: red;
 }
 
+.aboutBackground {
+  background-color: #f3f3f3;
+}
+
 .aboutColor {
   color: #555555;
 }
@@ -256,4 +260,12 @@ a {
   .dynamicWidth25 {
     width: 80%;
   }
+}
+
+.emailBttn {
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
 }

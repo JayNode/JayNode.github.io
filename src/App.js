@@ -1,6 +1,5 @@
 import "./App.css";
 import me from "./assets/me.jpeg";
-import Contact from "./components/Contact";
 import $ from "jquery";
 import Project from "./components/Project";
 import Art from "./components/Art";
@@ -112,6 +111,11 @@ function App() {
               <li className="nav-item">
                 <a className="nav-link" href="#projects">
                   PROJECTS
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#art">
+                  ART
                 </a>
               </li>
               <li className="nav-item">
@@ -271,7 +275,7 @@ function App() {
       </div>
 
       {/* <!-- Art --> */}
-      <div className="container pt-5">
+      <div id="art" className="container pt-5">
         <div className="row d-flex flex-column justify-content-center align-items-center mt-5">
           <h1
             className="font-weight-bold"
@@ -282,17 +286,17 @@ function App() {
           </h1>
           <div
             className="header-bar waypoint animated slide-in-left"
-            data-aos="fade-left"
-            data-aos-duration="3000"
-            data-aos-delay="500"
+            // data-aos="fade-left"
+            // data-aos-duration="3000"
+            // data-aos-delay="500"
           ></div>
         </div>
         <div className="row justify-content-md-center pt-5 pb-0">
           <div
             className="col"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-            data-aos-delay="500"
+            // data-aos="flip-left"
+            // data-aos-duration="1000"
+            // data-aos-delay="500"
           >
             <div className="">
               <Art artImg={ladyLight} />
@@ -302,9 +306,9 @@ function App() {
         <div className="row justify-content-md-center pt-4 pb-5">
           <div
             className="col"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-            data-aos-delay="500"
+            // data-aos="flip-left"
+            // data-aos-duration="1000"
+            // data-aos-delay="500"
           >
             <div className="">
               <Art artImg={tyler} />
@@ -312,9 +316,9 @@ function App() {
           </div>
           <div
             className="col"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-            data-aos-delay="500"
+            // data-aos="flip-left"
+            // data-aos-duration="1000"
+            // data-aos-delay="500"
           >
             <div className="">
               <Art artImg={model} />
@@ -322,9 +326,9 @@ function App() {
           </div>
           <div
             className="col"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-            data-aos-delay="500"
+            // data-aos="flip-left"
+            // data-aos-duration="1000"
+            // data-aos-delay="500"
           >
             <div className="">
               <Art artImg={sketch} />
@@ -515,7 +519,7 @@ function App() {
           </div>
 
           {/** <!-- Interests --> */}
-          <div id="projects" className="container">
+          <div id="projects" className="container ">
             <div className="row personalInterests">
               <div
                 className="text-light col-lg p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center cardStyle2"
@@ -595,55 +599,6 @@ function App() {
           </div>
         </div>
       </div>
-
-      {/* <!-- Contact -->  */}
-      <div id="contact" className="contactBg contactContainer ">
-        <div className="contactContent">
-          <svg
-            className="contactSvg"
-            preserveAspectRatio="none"
-            viewBox="0 0 100 102"
-            height="75"
-            width="100%"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            class="svgcolor-light"
-          >
-            <path
-              d="M0 0 L50 100 L100 0 Z"
-              fill="#f3f3f3"
-              stroke="#f3f3f3"
-            ></path>
-          </svg>
-        </div>
-        <div className="contactContent">
-          <div className=" d-flex flex-column justify-content-center align-items-center pt-5">
-            <h1
-              className="font-weight-bold"
-              data-aos="fade-left"
-              data-aos-duration="500"
-            >
-              CONTACT
-            </h1>
-            <div
-              className="header-bar contactBar"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              data-aos-delay="500"
-            ></div>
-          </div>
-          <div data-aos="zoom-in-down" data-aos-delay="1500">
-            <div>
-              <h5 className="text-center contactTitle">
-                If you have any Questions or Inquiries please leave a Message!
-              </h5>
-            </div>
-            <div>
-              <Contact />
-            </div>
-          </div>
-        </div>
-      </div>
       <footer
         id="links"
         className="container-fluid d-flex flex-column justify-content-center align-items-center footerContainer"
@@ -707,6 +662,13 @@ function App() {
               <i class="fab fa-github text-light"></i>
             </div>
           </a>
+          <form action="mailto:jimmerman819@gmail.com" method="post">
+            <button class="icon d-flex flex-column justify-content-center align-items-center emailBttn">
+              <div id="icon-5">
+                <i class="fa fa-envelope text-light"></i>
+              </div>
+            </button>
+          </form>
         </div>
         <div class="info-box">
           <div class="footnote">
