@@ -1,13 +1,20 @@
 import "./App.css";
 import me from "./assets/me.jpeg";
 import $ from "jquery";
-import Project from "./components/Project";
+import Project1 from "./components/Project1";
+import Project2 from "./components/Project2";
+import Project3 from "./components/Project3";
+import Project4 from "./components/Project4";
 import Art from "./components/Art";
-import resume from "./assets/2022Resume.pdf";
+import resume from "./assets/Jared-Immerman-Resume.pdf";
 import ladyLight from "./assets/lady-light.jpg";
 import tyler from "./assets/tyler-the-creator.jpg";
 import model from "./assets/model.jpg";
 import sketch from "./assets/lady-bnw.jpg";
+import recobotImg from "./assets/recoBot.png";
+import redditSum from "./assets/redditSum.png";
+import csGroup from "./assets/CS-Group.png";
+import ffgDisp from "./assets/FFG-display.png";
 function App() {
   //Dynamic Fixed Navigation Bar
   document.addEventListener("DOMContentLoaded", function () {
@@ -178,10 +185,10 @@ function App() {
           </ol>
           <div className="carousel-inner">
             <div className="carousel-item">
-              <Project
+              <Project1
                 title="Reco Bot"
                 pageLink="https://github.com/JayNode/VGRB"
-                videoLink="https://youtube.com/embed/dqSXcmuTBd0"
+                imgLink={recobotImg}
                 infoTitle="What is Reco Bot?"
                 infoText="Reco Bot is a video game recommendation bot through Discord. It will look at your 
                 current played games in your Steam library and recommend a game it believes you would enjoy."
@@ -190,10 +197,10 @@ function App() {
               />
             </div>
             <div className="carousel-item">
-              <Project
+              <Project2
                 title="Reddit Summarizer"
                 pageLink=""
-                videoLink="https://youtube.com/embed/dedLbTl9RD0"
+                imgLink={redditSum}
                 infoTitle="About"
                 infoText="Reddit Summarizer is a reddit bot that will search for articles in a given subreddit 
                 and comment a summary to help save a user time"
@@ -204,10 +211,10 @@ function App() {
               />
             </div>
             <div className="carousel-item active">
-              <Project
+              <Project3
                 title="Computer Starter"
                 pageLink="https://github.com/jjb4547/ComputerStarter"
-                videoLink="https://www.youtube.com/embed/C4jrGsz_XH4"
+                imgLink={csGroup}
                 infoTitle="Want to learn about PCs?"
                 infoText="Computer Starter is an android application geared towards
                 computer enthusiasts, old and new to join a community, learn
@@ -220,10 +227,10 @@ function App() {
               />
             </div>
             <div className="carousel-item">
-              <Project
+              <Project4
                 title="Fabled Fieldguide"
                 pageLink="https://github.com/JayNode/FFG"
-                videoLink="https://www.youtube.com/embed/hv7DdIy-ZbA"
+                imgLink={ffgDisp}
                 infoTitle="About"
                 infoText="Fabled Fieldguide is an environmental conservation focused website using 
                 mythical creatures as figure heads for thier respected environments. It makes learning 

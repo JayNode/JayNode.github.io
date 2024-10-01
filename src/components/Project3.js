@@ -1,9 +1,10 @@
 import "./../App.css";
 
-const Project = ({
+const Project3 = ({
   title,
   pageLink,
   videoLink,
+  imgLink,
   infoTitle,
   infoText,
   infoSecondTitle,
@@ -18,7 +19,8 @@ const Project = ({
             className="videoPlayer"
             frameborder="0"
             scrolling="no"
-            src={videoLink}
+            // src={videoLink}
+            src={imgLink}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -42,4 +44,4 @@ const Project = ({
   );
 };
 
-export default Project;
+export default Project3;
