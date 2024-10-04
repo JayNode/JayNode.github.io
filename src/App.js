@@ -1,10 +1,8 @@
 import "./App.css";
 import me from "./assets/me.jpeg";
 import $ from "jquery";
-import Project1 from "./components/Project1";
+import Project from "./components/Project";
 import Project2 from "./components/Project2";
-import Project3 from "./components/Project3";
-import Project4 from "./components/Project4";
 import Art from "./components/Art";
 import resume from "./assets/Jared-Immerman-Resume.pdf";
 import ladyLight from "./assets/lady-light.jpg";
@@ -184,8 +182,38 @@ function App() {
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           </ol>
           <div className="carousel-inner">
+            <div className="carousel-item active">
+              <Project
+                title="Computer Starter"
+                pageLink="https://github.com/jjb4547/ComputerStarter"
+                imgLink={csGroup}
+                infoTitle="Want to learn about PCs?"
+                infoText="Computer Starter is an android application geared towards
+                computer enthusiasts, old and new to join a community, learn
+                about computers and build one on their own."
+                infoSecondTitle="Technology"
+                infoSecondText="Computer Starter is an Android based application written in Java that 
+                truly utilizes its declarative concept allowing its UI to shine. It utilizes 
+                Firebase for Authentication and storage. Finally, Computer Starter uses web scraping 
+                tools to extract the best products and prices for the pc build section."
+              />
+            </div>
             <div className="carousel-item">
-              <Project1
+              <Project2
+                title="Fabled Fieldguide"
+                pageLink="https://github.com/JayNode/FFG"
+                imgLink={ffgDisp}
+                infoTitle="About"
+                infoText="Fabled Fieldguide is an environmental conservation focused website using 
+                mythical creatures as figure heads for thier respected environments. It makes learning 
+                about and helping the enviroment fun and fulfilling."
+                infoSecondTitle="Technology"
+                infoSecondText="Fable Fieldguide is a React web application written in JavaScript 
+                using MongDB for authentication and storage. "
+              />
+            </div>
+            <div className="carousel-item">
+              <Project2
                 title="Reco Bot"
                 pageLink="https://github.com/JayNode/VGRB"
                 imgLink={recobotImg}
@@ -210,36 +238,7 @@ function App() {
                 to extract a summarized version. Then we use reddit's API (PRAW) to comment the summary to the original post."
               />
             </div>
-            <div className="carousel-item active">
-              <Project3
-                title="Computer Starter"
-                pageLink="https://github.com/jjb4547/ComputerStarter"
-                imgLink={csGroup}
-                infoTitle="Want to learn about PCs?"
-                infoText="Computer Starter is an android application geared towards
-                computer enthusiasts, old and new to join a community, learn
-                about computers and build one on their own."
-                infoSecondTitle="Technology"
-                infoSecondText="Computer Starter is an Android based application written in Java that 
-                truly utilizes its declarative concept allowing its UI to shine. It utilizes 
-                Firebase for Authentication and storage. Finally, Computer Starter uses web scraping 
-                tools to extract the best products and prices for the pc build section."
-              />
-            </div>
-            <div className="carousel-item">
-              <Project4
-                title="Fabled Fieldguide"
-                pageLink="https://github.com/JayNode/FFG"
-                imgLink={ffgDisp}
-                infoTitle="About"
-                infoText="Fabled Fieldguide is an environmental conservation focused website using 
-                mythical creatures as figure heads for thier respected environments. It makes learning 
-                about and helping the enviroment fun and fulfilling."
-                infoSecondTitle="Technology"
-                infoSecondText="Fable Fieldguide is a React web application written in JavaScript 
-                using MongDB for authentication and storage. "
-              />
-            </div>
+
             {/* <div className="carousel-item">
               <Project
                 title="Mark Automation Script"

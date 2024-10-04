@@ -13,8 +13,12 @@ const Project2 = ({
   return (
     <>
       <div className="row justify-content-around bd-highlight pl-5 pr-5">
-        <div className="col-xl p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center">
-          <iframe
+        <div
+          className="col-xl p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center"
+          style={{ height: 650 }}
+        >
+          <img src={imgLink} alt="" height="auto" width="600"></img>
+          {/* <iframe
             width="100%"
             className="videoPlayer"
             frameborder="0"
@@ -24,7 +28,7 @@ const Project2 = ({
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
         </div>
         <div className="col-xl bd-highlight d-flex flex-column justify-content-center align-items-center">
           <div className="row justify-content-center align-items-center bd-highlight pl-5 pr-5 pb-5">
