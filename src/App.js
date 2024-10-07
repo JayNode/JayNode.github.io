@@ -61,7 +61,7 @@ function App() {
                   Hello, I'm
                 </h1>
                 <h1 className=" fw-bold m-0 text-color text-center">
-                  Jared Immerman
+                  Jared Immerman.
                 </h1>
               </div>
             </div>
