@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8ac91100.css",
+    "main.js": "/static/js/main.a338b2c6.js",
+    "static/js/453.29580928.chunk.js": "/static/js/453.29580928.chunk.js",
+    "static/media/lady-bnw.jpg": "/static/media/lady-bnw.542ea67d20800dbe892a.jpg",
+    "static/media/lady-light.jpg": "/static/media/lady-light.8c80ff9ba727bd290e09.jpg",
+    "static/media/tyler-the-creator.jpg": "/static/media/tyler-the-creator.46a6307c2ae6824cd20d.jpg",
+    "static/media/CS-Group.png": "/static/media/CS-Group.e22c53463ed96e813900.png",
+    "static/media/model.jpg": "/static/media/model.6686c28c80d723c92625.jpg",
+    "static/media/FFG-display.png": "/static/media/FFG-display.3cde3f7dd70a00ba70a8.png",
+    "static/media/Jared-Immerman-Resume.pdf": "/static/media/Jared-Immerman-Resume.d69461e2d2ab24dd88d1.pdf",
+    "static/media/redditSum.png": "/static/media/redditSum.b4a50768b93dfe2b7c3c.png",
+    "static/media/me.jpeg": "/static/media/me.4b711de0c2dde64ea82a.jpeg",
+    "static/media/recoBot.png": "/static/media/recoBot.631d79fa0ac85adad362.png",
+    "index.html": "/index.html",
+    "main.8ac91100.css.map": "/static/css/main.8ac91100.css.map",
+    "main.a338b2c6.js.map": "/static/js/main.a338b2c6.js.map",
+    "453.29580928.chunk.js.map": "/static/js/453.29580928.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ac91100.css",
+    "static/js/main.a338b2c6.js"
+  ]
+}
