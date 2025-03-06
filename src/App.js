@@ -632,7 +632,7 @@ function App() {
             </div>
           </a>
           <a
-            href={resume}
+            href={""}
             download="JaredImmermanResume"
             target="_blank"
             rel="noopener noreferrer"
