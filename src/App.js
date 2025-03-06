@@ -4,7 +4,6 @@ import $ from "jquery";
 import Project from "./components/Project";
 import Project2 from "./components/Project2";
 import Art from "./components/Art";
-import resume from "./assets/Jared-Immerman-Resume.pdf";
 import ladyLight from "./assets/lady-light.jpg";
 import tyler from "./assets/tyler-the-creator.jpg";
 import model from "./assets/model.jpg";
